@@ -4,7 +4,9 @@ A fully functional, production-grade calendar view component built with React, T
 
 ## 🚀 Live Demo
 
-**Storybook:** [Your Deployed Storybook URL Here]
+**Storybook:**    [Live Link](https://remissg-calenderview-storybook.netlify.app/).
+
+**Calender:**    [Live Link](https://remissg-calender-view.netlify.app/).
 
 ## ✨ Features
 
@@ -70,29 +72,42 @@ function App() {
 ### Component Structure
 
 ```
-src/
+calendar-component/
+│
+├── README.md # Documentation
+├── package.json # Dependencies
+├── tsconfig.json # TypeScript config
+├── tailwind.config.js # Tailwind customization
+├── .storybook/ # Storybook configuration
+│ ├── main.ts
+│ └── preview.ts
+│
+└── src/
 ├── components/
-│   ├── Calendar/
-│   │   ├── CalendarView.tsx          # Main container component
-│   │   ├── CalendarView.types.ts     # TypeScript interfaces
-│   │   ├── CalendarView.stories.tsx  # Storybook stories
-│   │   ├── MonthView.tsx             # Month grid view
-│   │   ├── WeekView.tsx              # Week time-slot view
-│   │   ├── CalendarCell.tsx          # Individual day cell
-│   │   └── EventModal.tsx            # Event creation/editing modal
-│   └── primitives/
-│       ├── Button.tsx                # Reusable button component
-│       ├── Modal.tsx                 # Modal wrapper
-│       ├── Input.tsx                 # Form input
-│       └── Select.tsx                # Dropdown select
+│ ├── Calendar/
+│ │ ├── CalendarView.tsx # Main component
+│ │ ├── CalendarView.stories.tsx # Storybook stories
+│ │ ├── CalendarView.types.ts
+│ │ ├── MonthView.tsx
+│ │ ├── WeekView.tsx
+│ │ ├── CalendarCell.tsx
+│ │ └── EventModal.tsx
+│ │
+│ └── primitives/ # Reusable UI elements
+│ ├── Button.tsx
+│ ├── Modal.tsx
+│ └── Select.tsx
+│
 ├── hooks/
-│   ├── useCalendar.ts                # Calendar state management
-│   └── useEventManager.ts            # Event CRUD operations
+│ ├── useCalendar.ts
+│ └── useEventManager.ts
+│
 ├── utils/
-│   ├── date.utils.ts                 # Date manipulation helpers
-│   └── event.utils.ts                # Event filtering/validation
+│ ├── date.utils.ts
+│ └── event.utils.ts
+│
 └── styles/
-    └── globals.css                   # Global styles
+└── globals.css
 ```
 
 ### Design Patterns
@@ -328,9 +343,9 @@ This project was created as part of a hiring assignment. All code is original wo
 ## 👤 Contact
 
 **Your Name**  
-Email: your.email@example.com  
-GitHub: [@yourusername](https://github.com/yourusername)  
-LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+Email: maitijoydip888@gmail.com  
+GitHub: [https://github.com/remissg](https://github.com/remissg)  
+LinkedIn: [Joydip Maiti](https://www.linkedin.com/in/joydip-maiti-607ba4301/)
 
 ---
 

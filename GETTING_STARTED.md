@@ -165,7 +165,7 @@ Open http://localhost:6006/ and explore:
 
 ### Port Already in Use
 
-If port 5173 or 6006 is in use:
+If port 7385 or 6006 is in use:
 ```bash
 # For dev server
 npm run dev

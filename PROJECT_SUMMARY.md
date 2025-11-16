@@ -179,6 +179,8 @@ Edit `README.md` and update:
 
 **Storybook:** [YOUR_DEPLOYED_STORYBOOK_URL]
 
+**Calender:** [YOUR_DEPLOYED_CALENDER_URL]
+
 ## 👤 Contact
 
 **Your Name**

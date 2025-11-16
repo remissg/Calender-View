@@ -254,33 +254,3 @@ export const CurrentMonth: Story = {
 };
 
 
-// Themed story with ThemeProvider and ThemeSwitcher
-import { ThemeProvider } from '@/context/ThemeContext';
-import ThemeSwitcher from './ThemeSwitcher';
-
-export const Themed: Story = {
-  render: (args) => {
-    return (
-      <ThemeProvider initial="pastel">
-        <div style={{ padding: 24 }}>
-          <ThemeSwitcher />
-          <CalendarView {...args} />
-        </div>
-      </ThemeProvider>
-    );
-  },
-  args: {
-    events: generateSampleEvents(8),
-    onEventAdd: (event) => console.log('Event added:', event),
-    onEventUpdate: (id, event) => console.log('Event updated:', id, event),
-    onEventDelete: (id) => console.log('Event deleted:', id),
-    initialView: 'month',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: 'Interactive themed calendar story — use the ThemeSwitcher to preview themes (persistent).'
-      }
-    }
-  }
-};

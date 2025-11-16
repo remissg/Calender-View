@@ -66,7 +66,7 @@ export const MonthView: React.FC<MonthViewProps> = ({
   return (
     <div className="rounded-2xl shadow-2xl overflow-hidden transform-3d animate-scale-in" style={{ background: "var(--cal-bg)", color: "var(--cal-text)", borderColor: "var(--cal-accent)" }}>
       {/* Week day headers */}
-      <div className="grid grid-cols-7 border-b-2 border-blue-300 bg-blue-200" style={{ background: "transparent" }}>
+      <div className="grid grid-cols-7 border-b-2 border-blue-300 bg-transparent">
         {weekDays.map((day) => (
           <div
             key={day}

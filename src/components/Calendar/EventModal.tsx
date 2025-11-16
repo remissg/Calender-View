@@ -101,11 +101,11 @@ export const EventModal: React.FC<EventModalProps> = ({
       const savedEvent = {
         id: event?.id || generateEventId(),
         title: formData.title.trim(),
-        description: formData.description.trim() || undefined,
+        description: formData.description.trim() ? formData.description.trim() : undefined,
         startDate: startDateTime,
         endDate: endDateTime,
         color: formData.color,
-        category: formData.category || undefined,
+        category: formData.category ? formData.category : undefined,
       };
 
       onSave(savedEvent);
@@ -126,9 +126,11 @@ export const EventModal: React.FC<EventModalProps> = ({
       isOpen={isOpen}
       onClose={onClose}
       title={mode === 'edit' ? 'Edit Event' : 'Create Event'}
-      titleClassName="bg-gradient-to-r from-blue-600 to-green-500 text-transparent bg-clip-text"
-      descriptionClassName="text-blue-800"
       description={mode === 'edit' ? 'Update event details below' : 'Add a new event to your calendar'}
+      // classNames={{
+      //   title: "bg-gradient-to-r from-blue-600 to-green-500 text-transparent bg-clip-text",
+      //   description: "text-blue-800",
+      // }}
       size="lg"
     >
       <form onSubmit={handleSubmit} className="flex flex-col" style={{ height: 'calc(85vh - 10rem)' }}>

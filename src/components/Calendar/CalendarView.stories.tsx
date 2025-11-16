@@ -255,7 +255,6 @@ export const CurrentMonth: Story = {
 
 
 // Themed story with ThemeProvider and ThemeSwitcher
-import React from 'react';
 import { ThemeProvider } from '@/context/ThemeContext';
 import ThemeSwitcher from './ThemeSwitcher';
 
@@ -273,7 +272,7 @@ export const Themed: Story = {
   args: {
     events: generateSampleEvents(8),
     onEventAdd: (event) => console.log('Event added:', event),
-    onEventUpdate: (id, updates) => console.log('Event updated:', id, updates),
+    onEventUpdate: (id, event) => console.log('Event updated:', id, event),
     onEventDelete: (id) => console.log('Event deleted:', id),
     initialView: 'month',
   },

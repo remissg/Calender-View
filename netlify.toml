@@ -1,0 +1,10 @@
+# Netlify configuration file
+
+[build]
+  # This command builds your Vite project for production
+  command = "npm run build"
+  # The output directory Netlify will deploy
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18" # Specifies the Node.js version to use for the build

@@ -1,0 +1,27 @@
+/* calendar-theme.css - multi theme CSS variables */
+:root {
+  --cal-bg: #ffffff;
+  --cal-text: #111111;
+  --cal-muted: #999999;
+  --cal-today-bg: #e7f0ff;
+  --cal-selected-bg: #d0eaff;
+  --cal-accent: #4a90e2;
+  --cal-secondary: #50e3c2;
+  --cal-accent-text: #ffffff;
+}
+
+/* Pastel */
+.theme-pastel { --cal-bg:#F7F9FC; --cal-text:#2C3E50; --cal-muted:#95A5A6; --cal-today-bg:#EAF4FF; --cal-selected-bg:#D1F5EE; --cal-accent:#4A90E2; --cal-secondary:#50E3C2; --cal-accent-text:#ffffff; }
+/* Dark */
+.theme-dark { --cal-bg:#1E1E1E; --cal-text:#FFFFFF; --cal-muted:#8F8F8F; --cal-today-bg:#333333; --cal-selected-bg:#3A3F47; --cal-accent:#6AB0FF; --cal-secondary:#6AB0FF; --cal-accent-text:#ffffff; }
+/* Corporate */
+.theme-corporate { --cal-bg:#F2F4F7; --cal-text:#1F2937; --cal-muted:#6B7280; --cal-today-bg:#DCE6F9; --cal-selected-bg:#0D47A1; --cal-accent:#0D47A1; --cal-secondary:#FFC107; --cal-accent-text:#FFFFFF; }
+/* High contrast */
+.theme-high-contrast { --cal-bg:#000000; --cal-text:#FFFFFF; --cal-muted:#BFBFBF; --cal-today-bg:#222222; --cal-selected-bg:#FFD700; --cal-accent:#FFD700; --cal-secondary:#FFFFFF; --cal-accent-text:#000000; }
+
+.calendar { background: var(--cal-bg); color: var(--cal-text); }
+.calendar .weekday { color: var(--cal-muted); }
+.calendar .day.disabled { color: var(--cal-muted); }
+.calendar .day.today { background: var(--cal-today-bg); border:1px solid var(--cal-accent); }
+.calendar .day.selected { background: var(--cal-selected-bg); color: var(--cal-accent-text); border:1px solid var(--cal-accent); }
+.calendar .event-badge { background: var(--cal-accent); color: var(--cal-accent-text); border-radius:4px; padding:2px 6px; display:inline-block; margin-bottom:4px; }

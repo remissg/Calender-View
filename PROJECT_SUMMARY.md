@@ -62,7 +62,7 @@ Your **Calendar View Component** for the Frontend Developer Hiring Assignment ha
 ## 🚀 Current Status
 
 ### Running Services
-1. **Development Server**: http://localhost:5174/
+1. **Development Server**: http://localhost:7385/
    - Live React application
    - Hot module replacement enabled
 

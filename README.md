@@ -4,7 +4,7 @@ A fully functional, production-grade calendar view component built with React, T
 
 ## 🚀 Live Demo
 
-**Storybook:**    [Live Link](https://remissg-calenderview-storybook.netlify.app/).
+**Storybook:**    [Live Link](https://www.chromatic.com/component?appId=691a968d22570596f2567110&csfId=calendar-calendarview&buildNumber=2&k=691a98c14d7f79dc30b4e660-1200px-interactive-true&h=5&b=-1).
 
 **Calender:**    [Live Link](https://remissg-calender-view.netlify.app/).
 
